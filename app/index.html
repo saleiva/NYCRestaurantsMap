@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Museums in Washington, DC</title>
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/cartodb.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />    
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/leaflet.ie.css" /><![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/wax.leaflet.min.js"></script>
+    <script type="text/javascript" src="js/cartodb-leaflet.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body onLoad="initialize()">
+    <div class="container">
+        <div class="hero-unit">
+            <h1>NYC Restaurant Maps</h1>
+            <p>Tagline</p>
+            <!--<p><a class="btn btn-primary btn-large">Learn more</a></p>-->
+        </div>
+        <div class="row ">
+            <div class="span4">
+                <form class="form-search">
+                    <input type="text" class="span4" placeholder="Search restaurants">
+                </form>
+            </div>
+            <div class="span8 buttonBar">
+                <div class="btn-group">
+                    <a class="btn" onclick="viewCategory('A');" href="#">Category A</a>
+                    <a class="btn" onclick="viewCategory('B');" href="#">Category B</a>
+                    <a class="btn" onclick="viewCategory('C');" href="#">Category C</a>
+                    <a class="btn" onclick="viewCategory('u');" href="#">Undefined</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="map_canvas" class="span12"></div> 
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+/*other stuff*/
+html, body {height: 100%; margin: 0; padding: 0; overflow:hidden;}
+
+div#map_canvas {
+	height:400px; 
+}
+
+div.buttonBar{
+	text-align:right;
+}
+
+input[type=text]{
+	height: 30px;
+}
+
+.btn{
+	height: 19px;
+}
